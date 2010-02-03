@@ -1,0 +1,27 @@
+minEffect.SLR			Calculate minimal detectable slope given
+				sample size and power for
+				simple linear regression
+minEffect.VSMc			Calculate minimal detectable mediation effect 
+				given sample size and power for
+				Vittinghoff and McCulloch's (2009) test
+powerMediation.Sobel		Calculate power for testing mediation effect 
+				based on Sobel's test
+powerMediation.VSMc		Calculate power for testing mediation 
+				effect based on Vittinghoff and McCulloch's 
+				(2009) method 
+power.SLR			Calculate power for testing slope
+				for simple linear regression
+power.SLR.rho			Calculate power for testing slope
+				for simple linear regression based on R2
+ssMediation.Sobel		Calculate sample size for testing mediation 
+				effect based on Sobel's test
+ssMediation.VSMc		Calculate sample size for testing mediation 
+				effect based on Vittinghoff and McCulloch's 
+				(2009) method 
+ss.SLR				Calculate sample size for testing slope
+				for simple linear regression
+ss.SLR.rho			Calculate sample size for testing slope
+				for simple linear regression based on R2
+testMediation.Sobel		Calculate p-value and confidence interval
+				for testing mediation effect 
+				based on Sobel's test

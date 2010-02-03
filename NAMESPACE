@@ -1,0 +1,18 @@
+import(stats)
+
+# functions
+export(
+  minEffect.SLR,
+  minEffect.VSMc,
+  powerMediation.Sobel,
+  powerMediation.VSMc,
+  power.SLR,
+  power.SLR.rho,
+  ssMediation.Sobel,
+  ssMediation.VSMc,
+  ss.SLR,
+  ss.SLR.rho,
+  testMediation.Sobel
+)
+
+
