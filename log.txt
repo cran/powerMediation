@@ -1,0 +1,8 @@
+v0.0.7 (powerMediation)
+  (1) fixed a bug in calculating sample size/power for mediation effect
+      based on Vittinghoff, Sen and McCulloch's (2009) method: corr.xm
+      should be corr.xm^2 in the formula
+  (2) fixed a bug in citing author names in R code or man file: the author 'Sen' was accidentally dropped.
+  (3) added sample size/power calculation for logistic, poisson, and cox regression based on Vittinghoff, Sen and McCulloch's (2009) method. Thanks for Dr. Rui Wang who pointed out the sample size/power calculation formula for these 3 addition models in Vittinghoff, Sen and McCulloch (2009) and encouraged me to implement them. She even sent to me an sample R code for sample size calculation for logistic regression  for testing mediation effect.
+  (4) replaced the examples in functions based on Vittinghoff, Sen and McCulloch's (2009) method
+

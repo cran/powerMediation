@@ -2,13 +2,35 @@ minEffect.SLR			Calculate minimal detectable slope given
 				sample size and power for
 				simple linear regression
 minEffect.VSMc			Calculate minimal detectable mediation effect 
-				given sample size and power for
-				Vittinghoff and McCulloch's (2009) test
+				in linear regression given sample size 
+				and power for Vittinghoff, Sen, and 
+				McCulloch's (2009) test
+minEffect.VSMc.logistic		Calculate minimal detectable mediation effect 
+				in logistic regression given sample size 
+				and power for Vittinghoff, Sen, and 
+				McCulloch's (2009) test
+minEffect.VSMc.poisson		Calculate minimal detectable mediation effect 
+				in poisson regression given sample size 
+				and power for Vittinghoff, Sen, and 
+				McCulloch's (2009) test
+minEffect.VSMc.cox		Calculate minimal detectable mediation effect 
+				in cox regression given sample size 
+				and power for Vittinghoff, Sen, and 
+				McCulloch's (2009) test
 powerMediation.Sobel		Calculate power for testing mediation effect 
 				based on Sobel's test
 powerMediation.VSMc		Calculate power for testing mediation 
-				effect based on Vittinghoff and McCulloch's 
-				(2009) method 
+				effect in linear regression based on 
+				Vittinghoff, Sen, and McCulloch's (2009) method 
+powerMediation.VSMc.logistic	Calculate power for testing mediation 
+				effect in logistic regression based on 
+				Vittinghoff, Sen, and McCulloch's (2009) method 
+powerMediation.VSMc.poisson	Calculate power for testing mediation 
+				effect in poisson regression based on 
+				Vittinghoff, Sen, and McCulloch's (2009) method 
+powerMediation.VSMc.cox		Calculate power for testing mediation 
+				effect in cox regression based on 
+				Vittinghoff, Sen, and McCulloch's (2009) method 
 power.SLR			Calculate power for testing slope
 				for simple linear regression
 power.SLR.rho			Calculate power for testing slope
@@ -16,8 +38,17 @@ power.SLR.rho			Calculate power for testing slope
 ssMediation.Sobel		Calculate sample size for testing mediation 
 				effect based on Sobel's test
 ssMediation.VSMc		Calculate sample size for testing mediation 
-				effect based on Vittinghoff and McCulloch's 
-				(2009) method 
+				effect in linear regression based on 
+				Vittinghoff, Sen, and McCulloch's (2009) method 
+ssMediation.VSMc.logistic	Calculate sample size for testing mediation 
+				effect in logistic regression based on 
+				Vittinghoff, Sen, and McCulloch's (2009) method 
+ssMediation.VSMc.poisson	Calculate sample size for testing mediation 
+				effect in poisson regression based on 
+				Vittinghoff, Sen, and McCulloch's (2009) method 
+ssMediation.VSMc.cox		Calculate sample size for testing mediation 
+				effect in cox regression based on 
+				Vittinghoff, Sen, and McCulloch's (2009) method 
 ss.SLR				Calculate sample size for testing slope
 				for simple linear regression
 ss.SLR.rho			Calculate sample size for testing slope
