@@ -87,7 +87,7 @@ The test is a two-sided test. Code for one-sided tests will be added later.
 }
 \examples{
   testMediation.Sobel(theta.1.hat=0.1701, lambda.hat=0.1998, 
-    sigma.theta1=0.05, sigma.lambda=0.05, alpha=0.05)
+    sigma.theta1=0.01, sigma.lambda=0.02, alpha=0.05)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

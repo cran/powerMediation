@@ -9,7 +9,7 @@ Calculate sample size for testing mediation effect based on Sobel's test.
 }
 \usage{
 ssMediation.Sobel(power, theta.1a, lambda.a, sigma.x, sigma.m,
-  rho2.mx, sigma.e, sigma.epsilon, n.lower = 1, n.upper = 1e+30, 
+  rho2.mx, sigma.epsilon, n.lower = 1, n.upper = 1e+30, 
   alpha = 0.05, verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
@@ -26,18 +26,13 @@ regression coefficient for the mediator in the linear regression linking
 the predictor \eqn{x} and the mediator \eqn{m} to the outcome \eqn{y} (\eqn{y_i=\gamma+\lambda m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})}).
 }
   \item{sigma.x}{
-variance of the predictor.
+standard deviation of the predictor.
 }
   \item{sigma.m}{
-variance of the mediator.
+standard deviation of the mediator.
 }
   \item{rho2.mx}{
 square of the correlation between the predictor and the mediator.
-}
-  \item{sigma.e}{
-standard deviation of the random error term 
-in the linear regression linking
-the predictor \eqn{x} to the mediator \eqn{m} (\eqn{m_i=\theta_0+\theta_1 x_i + e_i, e_i\sim N(0, \sigma^2_e)}).
 }
   \item{sigma.epsilon}{
 standard deviation of the random error term 
@@ -79,10 +74,18 @@ delta method:
 \sigma_{\theta_1\lambda}=\sqrt{\theta_1^2\sigma_{\lambda}^2+\lambda^2\sigma_{\theta_1}^2}
 }
 and
- \eqn{\hat{\sigma}_{\theta_1}=\sigma_e^2/(n\sigma_x^2)} is the estimated standard deviation
+ \eqn{\sigma_{\theta_1}^2=\sigma_e^2/(n\sigma_x^2)} is the variance
 of the estimate \eqn{\hat{\theta}_1}, and
-\eqn{\hat{\sigma}_{\lambda}=\sigma_{\epsilon}^2/(n\sigma_m^2(1-\rho_{mx}^2))} is the estimated standard deviation
-of the estimate \eqn{\hat{\lambda}}.
+\eqn{\sigma_{\lambda}=\sqrt{\sigma_{\epsilon}^2/(n\sigma_m^2(1-\rho_{mx}^2))}}
+is the variance 
+of the estimate \eqn{\hat{\lambda}}, \eqn{sigma_m^2} is the variance of the
+mediator \eqn{m_i}.
+
+From the linear regression \eqn{m_i=\theta_0+\theta_1 x_i+e_i}, we have the
+relationship \eqn{\sigma_e^2=\sigma_m^2(1-\rho^2_{mx})}. Hence, we can simply
+the variance \eqn{\sigma_{\theta_1, \lambda}} to 
+\deqn{\sigma_{\theta_1\lambda}=\sqrt{\theta_1^2\frac{\sigma_{\epsilon}^2}{n\sigma_m^2(1-\rho_{mx}^2)}+\lambda^2\frac{\sigma_{m}^2(1-\rho_{mx}^2)}{n\sigma_x^2}}}{%
+\sigma_{\theta_1\lambda}=\sqrt{\theta_1^2\frac{\sigma_{\epsilon}^2}{n\sigma_m^2(1-\rho_{mx}^2)}+\lambda^2\frac{\sigma_{m}^2(1-\rho_{mx}^2)}{n\sigma_x^2}}}
 }
 \value{
   \item{n }{sample size.}
@@ -106,7 +109,7 @@ The test is a two-sided test. Code for one-sided tests will be added later.
 }
 \examples{
  ssMediation.Sobel(power=0.8, theta.1a=0.1701, lambda.a=0.1998, 
-   sigma.x=0.57, sigma.m=0.61, rho2.mx=0.3, sigma.e=0.2, sigma.epsilon=0.2, 
+   sigma.x=0.57, sigma.m=0.61, rho2.mx=0.3, sigma.epsilon=0.2, 
    alpha = 0.05, verbose = TRUE)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

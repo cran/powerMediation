@@ -1,6 +1,6 @@
 Package: powerMediation
-Version: 0.0.7
-Date: 2011-07-21
+Version: 0.0.8
+Date: 2012-03-12
 Title: Power/Sample size calculation for mediation analysis
 Author: Weiliang Qiu <stwxq@channing.harvard.edu>
 Maintainer: Weiliang Qiu <stwxq@channing.harvard.edu>
@@ -13,5 +13,5 @@ Description: The package contains functions for calculating power,
         the slope in a simple linear regression (only one predictor).
 License: GPL (>= 2)
 Repository: CRAN
-Date/Publication: 2011-08-17 20:27:17
-Packaged: 2011-07-22 18:36:26 UTC; stwxq
+Packaged: 2012-03-12 16:05:07 UTC; stwxq
+Date/Publication: 2012-03-12 16:45:43

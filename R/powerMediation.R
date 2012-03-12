@@ -107,7 +107,7 @@ powerMediation.MacKinnon <- function(n, theta.1a, lambda.a, sigma.x,
 # yi = gamma + lambda * mi + epsiloni, epsiloni~N(0, sigma.epsilon^2)
 # H0: theta1*lambda = 0 vs Ha: theta1*lambda=theta.1a*lambda.a neq 0
 powerMediation.Sobel <- function(n, theta.1a, lambda.a, sigma.x, 
-  sigma.m, rho2.mx, sigma.e, sigma.epsilon, alpha=0.05, verbose=TRUE)
+  sigma.m, rho2.mx, sigma.epsilon, alpha=0.05, verbose=TRUE)
 {
     if(rho2.mx >= 1 || rho2.mx < 0)
     {
@@ -115,7 +115,8 @@ powerMediation.Sobel <- function(n, theta.1a, lambda.a, sigma.x,
     }
 
     numer<-sqrt(n)*theta.1a*lambda.a
-    denom<-sqrt(theta.1a^2*sigma.epsilon^2/(sigma.m^2*(1-rho2.mx))+lambda.a^2*sigma.e^2/sigma.x^2)
+    # sigma.e^2=sigma.m^2*(1-rho.mx^2)
+    denom<-sqrt(theta.1a^2*sigma.epsilon^2/(sigma.m^2*(1-rho2.mx))+lambda.a^2*sigma.m^2*(1-rho2.mx)/sigma.x^2)
     delta<-numer/denom
   
     alpha2<-alpha/2
@@ -210,12 +211,12 @@ qprod <- function(p,  xmux, xmuy, rho, z.lower=-1.0e+30, z.upper=1.0e+30,
 
 
 tmpSS.mediation.Sobel<-function(n, power, theta.1a, lambda.a, 
-   sigma.x, sigma.m, rho2.mx, sigma.e, sigma.epsilon,
+   sigma.x, sigma.m, rho2.mx, sigma.epsilon,
    alpha=0.05, verbose=FALSE)
 {
   tmppower<-powerMediation.Sobel(n=n, theta.1a=theta.1a, 
     lambda.a=lambda.a, sigma.x=sigma.x, sigma.m=sigma.m,
-    rho2.mx=rho2.mx, sigma.e=sigma.e, sigma.epsilon=sigma.epsilon,
+    rho2.mx=rho2.mx, sigma.epsilon=sigma.epsilon,
     alpha=alpha, verbose=verbose)
   res<- tmppower$power-power
   return(res)
@@ -223,7 +224,7 @@ tmpSS.mediation.Sobel<-function(n, power, theta.1a, lambda.a,
 
 #####################################################
 ssMediation.Sobel <- function(power, theta.1a, lambda.a, 
-  sigma.x, sigma.m, rho2.mx, sigma.e, sigma.epsilon, 
+  sigma.x, sigma.m, rho2.mx, sigma.epsilon, 
   n.lower=1, n.upper=1.0e+30, 
   alpha = 0.05, verbose=TRUE)
 {
@@ -249,7 +250,7 @@ ssMediation.Sobel <- function(power, theta.1a, lambda.a,
       interval=c(n.lower, n.upper),
       power=power, theta.1a=theta.1a, lambda.a=lambda.a, 
       sigma.x=sigma.x, sigma.m=sigma.m, rho2.mx=rho2.mx,
-      sigma.e=sigma.e, sigma.epsilon=sigma.epsilon,
+      sigma.epsilon=sigma.epsilon,
       alpha=alpha, verbose=FALSE)
 
   n.numeric<-res.uniroot$root

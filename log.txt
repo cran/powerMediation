@@ -1,3 +1,35 @@
+v0.0.8 (powerMediation)
+  (1) Dr. George D. Papandonatos (gdp@stat.brown.edu)
+      sent an e-mail to me today and kindly mentioned a few improvements
+      for power calculation for Sobel test:
+
+#############################################
+Dear Weiliang,
+
+your help file for deriving the power of the Soble test allows
+users to enter sigma.m, sigma.x, theta.1a, and sigma.e as free
+parameters. However,
+
+sigma.m^2 = theta.1a^2*sigma.x^2+sigma.e^2
+
+so that sigma.m is not a free parameter. Indeed, in the example
+given in your documentation, it appears that
+
+sigma.m = sqrt( .1701^2*.57^2+.20^2) = 0.22
+
+which conflicts with the 0.612 value assigned to this parameter.
+I belive that you should not have sigma.m as an argument to this
+function.
+
+Further, the documentation refers to sigma.m, sigma.x as variances,
+whereas your code suggests they are standard deviations.
+
+Also, you refer to sigma.theta and sigma.lambda as standard deviations,
+whereas the formulae given suggest that they are variances.
+
+#############################################
+
+
 v0.0.7 (powerMediation)
   (1) fixed a bug in calculating sample size/power for mediation effect
       based on Vittinghoff, Sen and McCulloch's (2009) method: corr.xm

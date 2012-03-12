@@ -60,7 +60,7 @@ The test is a two-sided test. Code for one-sided tests will be added later.
 \code{\link{minEffect.SLR}},
 \code{\link{power.SLR}},
 \code{\link{power.SLR.rho}},
-\code{\link{ss.SLR.rho}}.
+\code{\link{ss.SLR}}.
 }
 
 \examples{
