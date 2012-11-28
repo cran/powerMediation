@@ -78,7 +78,7 @@ and
 of the estimate \eqn{\hat{\theta}_1}, and
 \eqn{\sigma_{\lambda}=\sqrt{\sigma_{\epsilon}^2/(n\sigma_m^2(1-\rho_{mx}^2))}}
 is the variance 
-of the estimate \eqn{\hat{\lambda}}, \eqn{sigma_m^2} is the variance of the
+of the estimate \eqn{\hat{\lambda}}, \eqn{\sigma_m^2} is the variance of the
 mediator \eqn{m_i}.
 
 From the linear regression \eqn{m_i=\theta_0+\theta_1 x_i+e_i}, we have the

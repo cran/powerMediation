@@ -73,8 +73,10 @@ ss.VSMc<-function(power, b2,
   }
   za<-qnorm(1-alpha)
   zg<-qnorm(power)
-  numer<-(za+zg)^2
-  denom<-(b2*sigma.m)^2*(1-corr.xm^2)/sigma.e
+
+  numer<-(za+zg)^2*sigma.e^2
+  denom<-(b2*sigma.m)^2*(1-corr.xm^2)
+
   n.numeric<-numer/denom
 
   if(verbose)
@@ -99,7 +101,8 @@ powerMediation.VSMc<-function(n, b2, sigma.m, sigma.e, corr.xm,
   alpha2<-alpha/2
 
   za2<-qnorm(1-alpha2)
-  delta<-b2*sigma.m*sqrt(n*(1-corr.xm^2))*sqrt(sigma.e)
+ 
+  delta<-b2*sigma.m*sqrt(n*(1-corr.xm^2))/sigma.e
 
   power<-2-pnorm(za2-delta)-pnorm(za2+delta)
 

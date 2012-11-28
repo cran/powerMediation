@@ -1,3 +1,8 @@
+v0.1.0 (powerMediation) Nov. 28, 2012
+  (1) fixed 2 bugs in the file: power_VSMc_linear.R 
+v0.0.9 (powerMediation)
+  (1) fix a typo in man file for 'powerMediation.Sobel'
+
 v0.0.8 (powerMediation)
   (1) Dr. George D. Papandonatos (gdp@stat.brown.edu)
       sent an e-mail to me today and kindly mentioned a few improvements
