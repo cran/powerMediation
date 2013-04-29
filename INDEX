@@ -17,6 +17,10 @@ minEffect.VSMc.cox		Calculate minimal detectable mediation effect
 				in cox regression given sample size 
 				and power for Vittinghoff, Sen, and 
 				McCulloch's (2009) test
+powerLogisticBin		power calculation for logistic regression
+				with binary predictor
+powerLogisticCon		power calculation for logistic regression
+				with continuous predictor
 powerMediation.Sobel		Calculate power for testing mediation effect 
 				based on Sobel's test
 powerMediation.VSMc		Calculate power for testing mediation 
@@ -35,6 +39,10 @@ power.SLR			Calculate power for testing slope
 				for simple linear regression
 power.SLR.rho			Calculate power for testing slope
 				for simple linear regression based on R2
+SSizeLogisticBin		sample size calculation for logistic regression 
+				with binary predictor
+SSizeLogisticCon		sample size calculation for logistic regression 
+				with continuous predictor
 ssMediation.Sobel		Calculate sample size for testing mediation 
 				effect based on Sobel's test
 ssMediation.VSMc		Calculate sample size for testing mediation 

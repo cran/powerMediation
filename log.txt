@@ -1,3 +1,6 @@
+v0.1.1 (powerMediation) April 26, 2013
+  (1) add functions 'powerLogistic.OR' and 'SSizeLogistic.OR' to calculate
+      power and sample size for logistic regression
 v0.1.0 (powerMediation) Nov. 28, 2012
   (1) fixed 2 bugs in the file: power_VSMc_linear.R 
 v0.0.9 (powerMediation)
