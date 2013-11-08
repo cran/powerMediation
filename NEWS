@@ -1,3 +1,24 @@
+v0.1.7 (powerMediation) Nov. 08, 2013
+  (1) fixed a 'NOTE': line too widths in some Rd file e.g. 'ss.SLR.Rd'
+v0.1.6 (powerMediation) Nov. 08, 2013
+  (1) submit to CRAN
+v0.1.5 (powerMediation) April 30, 2013
+  (1) add functions 'ssLong', 'ssLongFull', 'powerLong', 'powerLongFull' to calculate sample size or power for
+      longitudinal study with 2 time points
+v0.1.4 (powerMediation) April 29, 2013
+  (1) fixed one bug in the files 'powerLogisticBin.Rd' and 'powerLogisticCon.Rd': the 'value' slot should be 'Estimated power'
+  (2) fixed one bug in files 'powerLogisticBin.Rd', 'powerLogisticCon.Rd',
+'SSizeLogisticBin.Rd', and 'SSizeLogisticCon.Rd': Zu should be 'u-th percentile', not 'upper u-th percentile'.
+This is a typo in the file 'http://personal.health.usf.edu/ywu/logistic.pdf'
+  (3) change the title in DESCRIPTION to "Power/Sample size calculation for mediation analysis, simple linear
+regression, and logistic regression"
+
+v0.1.3 (powerMediation) April 29, 2013
+  (1) fixed 2 typos in DESCRIPTION file: 'continous' should be 'continuous';
+'poisson' should be 'Poisson'
+v0.1.2 (powerMediation) April 29, 2013
+  (1) the same as v0.1.1 (failed to upload v0.1.1 and need a new version to
+upload it again to CRAN)
 v0.1.1 (powerMediation) April 26, 2013
   (1) add functions 'powerLogistic.OR' and 'SSizeLogistic.OR' to calculate
       power and sample size for logistic regression

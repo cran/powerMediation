@@ -8,7 +8,11 @@ Calculating power for simple logistic regression with binary predictor
 Calculating power for simple logistic regression with binary predictor.
 }
 \usage{
-powerLogisticBin(n, p1, p2, B, alpha = 0.05)
+powerLogisticBin(n, 
+                 p1, 
+                 p2, 
+                 B, 
+                 alpha = 0.05)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -41,15 +45,15 @@ where \eqn{p=prob(Y=1)}, \eqn{X} is the binary predictor, \eqn{p_1=pr(diseased |
 \eqn{p_2=pr(diseased| X = 1)}, \eqn{B=pr(X=1)}, and \eqn{p = (1 - B) p_1+B p_2}.
 The sample size formula we used for testing if \eqn{\beta_1=0}, is Formula (2) in Hsieh et al. (1998):
 \deqn{
-n=(Z_{1-\alpha/2}[p*(1-p)/B]^{1/2} + Z_{power}[p_1(1-p_1)+p_2(1-p_2)(1-B)/B]^{1/2})^2/[ (p_1-p_2)^2 (1-B) ]
+n=(Z_{1-\alpha/2}[p(1-p)/B]^{1/2} + Z_{power}[p_1(1-p_1)+p_2(1-p_2)(1-B)/B]^{1/2})^2/[ (p_1-p_2)^2 (1-B) ]
 }{%
-n=(Z_{1-\alpha/2}[p*(1-p)/B]^{1/2} + Z_{power}[p_1(1-p_1)+p_2(1-p_2)(1-B)/B]^{1/2})^2/[ (p_1-p_2)^2 (1-B) ]
+n=(Z_{1-\alpha/2}[p(1-p)/B]^{1/2} + Z_{power}[p_1(1-p_1)+p_2(1-p_2)(1-B)/B]^{1/2})^2/[ (p_1-p_2)^2 (1-B) ]
 }
-where \eqn{n} is the required total sample size and \eqn{Z_u} is the upper \eqn{u}-th
+where \eqn{n} is the required total sample size and \eqn{Z_u} is the \eqn{u}-th
 percentile of the standard normal distribution.
 }
 \value{
-total sample size required.
+Estimated power.
 }
 \references{
     Hsieh, FY, Bloch, DA, and Larsen, MD.

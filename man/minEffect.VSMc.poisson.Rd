@@ -7,7 +7,13 @@ Minimum detectable slope for mediator in poisson regression based on Vittinghoff
  Calculate minimal detectable slope for mediator given sample size and power in poisson regression based on Vittinghoff, Sen and McCulloch's (2009) method.
 }
 \usage{
-minEffect.VSMc.poisson(n, power, sigma.m, EY, corr.xm, alpha = 0.05, verbose = TRUE)
+minEffect.VSMc.poisson(n, 
+                       power, 
+                       sigma.m, 
+                       EY, 
+                       corr.xm, 
+                       alpha = 0.05, 
+                       verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

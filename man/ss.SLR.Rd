@@ -8,7 +8,14 @@ Sample size for testing slope for simple linear regression
 Calculate sample size for testing slope for simple linear regression.
 }
 \usage{
-ss.SLR(power, lambda.a, sigma.x, sigma.y, n.lower = 2.01, n.upper = 1e+30, alpha = 0.05, verbose = TRUE)
+ss.SLR(power, 
+       lambda.a, 
+       sigma.x, 
+       sigma.y, 
+       n.lower = 2.01, 
+       n.upper = 1e+30, 
+       alpha = 0.05, 
+       verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

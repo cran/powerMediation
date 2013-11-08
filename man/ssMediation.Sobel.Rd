@@ -8,9 +8,17 @@ Sample size for testing mediation effectd (Sobel's test)
 Calculate sample size for testing mediation effect based on Sobel's test.
 }
 \usage{
-ssMediation.Sobel(power, theta.1a, lambda.a, sigma.x, sigma.m,
-  rho2.mx, sigma.epsilon, n.lower = 1, n.upper = 1e+30, 
-  alpha = 0.05, verbose = TRUE)
+ssMediation.Sobel(power, 
+                  theta.1a, 
+                  lambda.a, 
+                  sigma.x, 
+                  sigma.m,
+                  rho2.mx, 
+                  sigma.epsilon, 
+                  n.lower = 1, 
+                  n.upper = 1e+30, 
+                  alpha = 0.05, 
+                  verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

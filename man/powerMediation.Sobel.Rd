@@ -8,8 +8,15 @@ Power for testing mediation effect  (Sobel's test)
 Calculate power for testing mediation effect based on Sobel's test.
 }
 \usage{
-powerMediation.Sobel(n, theta.1a, lambda.a, sigma.x, sigma.m,
-  rho2.mx, sigma.epsilon, alpha = 0.05, verbose = TRUE)
+powerMediation.Sobel(n, 
+                     theta.1a, 
+                     lambda.a, 
+                     sigma.x, 
+                     sigma.m,
+                     rho2.mx, 
+                     sigma.epsilon, 
+                     alpha = 0.05, 
+                     verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

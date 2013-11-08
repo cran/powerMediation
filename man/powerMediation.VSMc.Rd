@@ -8,8 +8,13 @@ Power for testing mediation effect in linear regression based on Vittinghoff, Se
 Calculate Power for testing mediation effect in linear regression based on Vittinghoff, Sen and McCulloch's (2009) method. 
 }
 \usage{
-powerMediation.VSMc(n, b2, sigma.m, sigma.e, corr.xm, alpha = 0.05, 
-  verbose = TRUE)
+powerMediation.VSMc(n, 
+                    b2, 
+                    sigma.m, 
+                    sigma.e, 
+                    corr.xm, 
+                    alpha = 0.05, 
+                    verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

@@ -7,7 +7,13 @@ Minimum detectable slope for mediator in cox regression based on Vittinghoff, Se
  Calculate minimal detectable slope for mediator given sample size and power in cox regression based on Vittinghoff, Sen and McCulloch's (2009) method.
 }
 \usage{
-minEffect.VSMc.cox(n, power, sigma.m, psi, corr.xm, alpha = 0.05, verbose = TRUE)
+minEffect.VSMc.cox(n, 
+                   power, 
+                   sigma.m, 
+                   psi, 
+                   corr.xm, 
+                   alpha = 0.05, 
+                   verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

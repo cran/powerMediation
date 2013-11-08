@@ -8,8 +8,15 @@ Sample size for testing mediation effect in logistic regression based on Vitting
 Calculate sample size for testing mediation effect in logistic regression based on Vittinghoff, Sen and McCulloch's (2009) method. 
 }
 \usage{
-ssMediation.VSMc.logistic(power, b2, sigma.m, p, corr.xm, 
-  n.lower=1, n.upper=1e+30, alpha = 0.05, verbose=TRUE)
+ssMediation.VSMc.logistic(power, 
+                          b2, 
+                          sigma.m, 
+                          p, 
+                          corr.xm, 
+                          n.lower = 1, 
+                          n.upper = 1e+30, 
+                          alpha = 0.05, 
+                          verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

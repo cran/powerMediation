@@ -8,8 +8,15 @@ Sample size for testing mediation effect in linear regression based on Vittingho
 Calculate sample size for testing mediation effect in linear regression based on Vittinghoff, Sen and McCulloch's (2009) method. 
 }
 \usage{
-ssMediation.VSMc(power, b2, sigma.m, sigma.e, corr.xm, 
-  n.lower=1, n.upper=1e+30, alpha = 0.05, verbose=TRUE)
+ssMediation.VSMc(power, 
+                 b2, 
+                 sigma.m, 
+                 sigma.e, 
+                 corr.xm, 
+                 n.lower = 1, 
+                 n.upper = 1e+30, 
+                 alpha = 0.05, 
+                 verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

@@ -8,8 +8,13 @@ Power for testing mediation effect in poisson regression based on Vittinghoff, S
 Calculate Power for testing mediation effect in poisson regression based on Vittinghoff, Sen and McCulloch's (2009) method. 
 }
 \usage{
-powerMediation.VSMc.poisson(n, b2, sigma.m, EY, corr.xm, alpha = 0.05, 
-  verbose = TRUE)
+powerMediation.VSMc.poisson(n, 
+                            b2, 
+                            sigma.m, 
+                            EY, 
+                            corr.xm, 
+                            alpha = 0.05, 
+                            verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

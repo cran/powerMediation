@@ -8,7 +8,12 @@ Power for testing slope for simple linear regression
 Calculate power for testing slope for simple linear regression.
 }
 \usage{
-power.SLR(n, lambda.a, sigma.x, sigma.y, alpha = 0.05, verbose = TRUE)
+power.SLR(n, 
+          lambda.a, 
+          sigma.x, 
+          sigma.y, 
+          alpha = 0.05, 
+          verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

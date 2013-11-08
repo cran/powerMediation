@@ -8,8 +8,13 @@ Power for testing mediation effect in logistic regression based on Vittinghoff, 
 Calculate Power for testing mediation effect in logistic regression based on Vittinghoff, Sen and McCulloch's (2009) method. 
 }
 \usage{
-powerMediation.VSMc.logistic(n, b2, sigma.m, p, corr.xm, alpha = 0.05, 
-  verbose = TRUE)
+powerMediation.VSMc.logistic(n, 
+                             b2, 
+                             sigma.m, 
+                             p, 
+                             corr.xm, 
+                             alpha = 0.05, 
+                             verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

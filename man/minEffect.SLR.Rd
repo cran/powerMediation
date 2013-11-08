@@ -7,7 +7,12 @@ Minimum detectable slope
  Calculate minimal detectable slope given sample size and power for simple linear regression.
 }
 \usage{
-minEffect.SLR(n, power, sigma.x, sigma.y, alpha = 0.05, verbose = TRUE)
+minEffect.SLR(n, 
+              power, 
+              sigma.x, 
+              sigma.y, 
+              alpha = 0.05, 
+              verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

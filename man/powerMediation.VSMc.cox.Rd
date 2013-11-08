@@ -8,8 +8,13 @@ Power for testing mediation effect in cox regression based on Vittinghoff, Sen a
 Calculate Power for testing mediation effect in cox regression based on Vittinghoff, Sen and McCulloch's (2009) method. 
 }
 \usage{
-powerMediation.VSMc.cox(n, b2, sigma.m, psi, corr.xm, alpha = 0.05, 
-  verbose = TRUE)
+powerMediation.VSMc.cox(n, 
+                        b2, 
+                        sigma.m, 
+                        psi, 
+                        corr.xm, 
+                        alpha = 0.05, 
+                        verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

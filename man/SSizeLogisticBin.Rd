@@ -8,7 +8,11 @@ Calculating sample size for simple logistic regression with binary predictor
 Calculating sample size for simple logistic regression with binary predictor.
 }
 \usage{
-SSizeLogisticBin(p1, p2, B, alpha = 0.05, power = 0.8)
+SSizeLogisticBin(p1, 
+                 p2, 
+                 B, 
+                 alpha = 0.05, 
+                 power = 0.8)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -48,7 +52,7 @@ n = (Z_{1-\alpha/2}[p(1-p)/B]^{1/2} + Z_{power}[p_1(1-p_1)+p_2(1-p_2)(1-B)/B]^{1
 }{%
 n=(Z_{1-\alpha/2}[p(1-p)/B]^{1/2} + Z_{power}[p_1(1-p_1)+p_2(1-p_2)(1-B)/B]^{1/2})^2/[ (p_1-p_2)^2 (1-B) ]
 }
-where \eqn{n} is the required total sample size and \eqn{Z_u} is the upper \eqn{u}-th
+where \eqn{n} is the required total sample size and \eqn{Z_u} is the \eqn{u}-th
 percentile of the standard normal distribution.
 }
 \value{

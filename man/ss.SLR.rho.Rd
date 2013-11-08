@@ -8,8 +8,12 @@ Sample size for testing slope for simple linear regression based on R2
 Calculate sample size for testing slope for simple linear regression based on R2.
 }
 \usage{
-ss.SLR.rho(power, rho2, n.lower = 2.01, n.upper = 1e+30, 
-    alpha = 0.05, verbose = TRUE)
+ss.SLR.rho(power, 
+           rho2, 
+           n.lower = 2.01, 
+           n.upper = 1e+30, 
+           alpha = 0.05, 
+           verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

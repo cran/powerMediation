@@ -8,8 +8,11 @@ P-value and confidence interval for testing mediation effect  (Sobel's test)
 Calculate p-value and confidence interval for testing mediation effect based on Sobel's test.
 }
 \usage{
-testMediation.Sobel(theta.1.hat, lambda.hat, 
-  sigma.theta1, sigma.lambda, alpha=0.05)
+testMediation.Sobel(theta.1.hat, 
+                    lambda.hat, 
+                    sigma.theta1, 
+                    sigma.lambda, 
+                    alpha = 0.05)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{

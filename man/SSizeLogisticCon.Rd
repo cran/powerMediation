@@ -8,7 +8,10 @@ Calculating sample size for simple logistic regression with continuous predictor
 Calculating sample size for simple logistic regression with continuous predictor.
 }
 \usage{
-SSizeLogisticCon(p1, OR, alpha = 0.05, power = 0.8)
+SSizeLogisticCon(p1, 
+                 OR, 
+                 alpha = 0.05, 
+                 power = 0.8)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
@@ -44,9 +47,8 @@ n=(Z_{1-\alpha/2} + Z_{power})^2/[ p_1 (1-p_1) [log(OR)]^2 ]
 }
 where \eqn{n} is the required total sample size, \eqn{OR} is the
 odds ratio to be tested, \eqn{p_1} is the event rate at the mean
-of the predictor \eqn{X}, and \eqn{Z_u} is the upper \eqn{u}-th
+of the predictor \eqn{X}, and \eqn{Z_u} is the \eqn{u}-th
 percentile of the standard normal distribution.
-%%  ~~ If necessary, more details than the description above ~~
 }
 \value{
 total sample size required.

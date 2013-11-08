@@ -7,7 +7,13 @@ Minimum detectable slope for mediator in linear regression based on Vittinghoff,
  Calculate minimal detectable slope for mediator given sample size and power in simple linear regression based on Vittinghoff, Sen and McCulloch's (2009) method.
 }
 \usage{
-minEffect.VSMc(n, power, sigma.m, sigma.e, corr.xm, alpha = 0.05, verbose = TRUE)
+minEffect.VSMc(n, 
+               power, 
+               sigma.m, 
+               sigma.e, 
+               corr.xm, 
+               alpha = 0.05, 
+               verbose = TRUE)
 }
 %- maybe also 'usage' for other objects documented here.
 \arguments{
