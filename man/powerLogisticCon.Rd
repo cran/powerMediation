@@ -19,11 +19,11 @@ powerLogisticCon(n,
 total sample size.
 }
   \item{p1}{
-the event rate at the mean of the continuous predictor \code{X} in logistic regression
+the event rate at the mean of the continuous predictor \eqn{X} in logistic regression
 \eqn{logit(p) = a + b X}.
 }
   \item{OR}{
-expected odds ratio.
+expected odds ratio. \eqn{\log(OR)} is the change in log odds for an increase of one unit in \eqn{X}.
 }
   \item{alpha}{
 Type I error rate.

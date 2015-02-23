@@ -1,7 +1,7 @@
 # power for simple logistic regression based on
 # http://personal.health.usf.edu/ywu/logistic.pdf
 # Hsieh et al. STATISTICS IN MEDICINE
-# Statist. Med. 17, 1623Ï1634 (1998)
+# Statist. Med. 17, 1623-1634 (1998)
 # 
 
 # created on Sept. 24, 2012

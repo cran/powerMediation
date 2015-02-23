@@ -1,3 +1,26 @@
+v0.2.1 (powerMediation) Feb. 20, 2015
+  (1) add documents for functions: 'powerInteract' 
+      'powerLong.multiTime', and 'ssLong.multiTime'
+  (2) fixed 1 bug in calculating 'powerLong.multiTime':
+        should use qnorm(1-alpha), not qnorm(1-alpha/2)
+  (3) output round up sample size per group
+
+v0.2.0 (powerMediation) Jan. 07, 2015
+  (1) Dr. ToRe Wentzel-Larsen (tore.wentzellarsen@gmail.com) kindly pointed out that the interpretation of OR in the functions 'powerLogisticCon'
+and 'SSizeLogisticCon.Rd' is not correct. The followings are his e-mail
+on Jan 2, 2015. Based on Dr. ToRe Wentzel-Larsen's suggestion, I added one
+phase '\eqn{\log(OR)} is the change in log odds for an increase of one unit in \eqn{X}.' to the interpretation of OR.
+------------------------------
+Dear Weiliang Qiu,
+The formula in the documentation for this function is the same as formula (1) in the cited article by Hsieh et. al. (with beta^star written as log of the OR) However, in formula (1) in the article beta^star is not simply a regression coefficient under the alternative hypothesis, but a standardized effect size, see e. g. Appendix 1 and the Example in the article. This means that the OR has to be stated per a one standard deviation difference in the continuous independent variable in question. Perhaps that could be explicitly stated in the documentation for powerLogisticCon, since if not some users may erroneously use powerLogisticCon with the OR per one unit difference of the independent variable (although it is fairly obvious that some standardization is needed in powerLogisticCon, if not the computed power will differ as to whether the independent variable is measured in e. g. USD or 1000 USD).   
+Best regards, ToRe Wentzel-Larsen
+---------------------------------- 
+
+v0.1.9 (powerMediation) Dec. 06, 2013
+  (1) added functions 'powerLong.multiTime' and 'ssLong.multiTime'
+v0.1.8 (powerMediation) Dec. 04, 2013
+  (1) added function 'powerInteract'
+
 v0.1.7 (powerMediation) Nov. 08, 2013
   (1) fixed a 'NOTE': line too widths in some Rd file e.g. 'ss.SLR.Rd'
 v0.1.6 (powerMediation) Nov. 08, 2013

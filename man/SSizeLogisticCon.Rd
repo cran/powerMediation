@@ -21,6 +21,7 @@ the event rate at the mean of the continuous predictor \code{X} in logistic regr
 }
   \item{OR}{
 expected odds ratio.
+\eqn{\log(OR)} is the change in log odds for an increase of one unit in \eqn{X}.
 }
   \item{alpha}{
 Type I error rate.
