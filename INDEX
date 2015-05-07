@@ -43,10 +43,12 @@ powerMediation.VSMc.poisson	Calculate power for testing mediation
 powerMediation.VSMc.cox		Calculate power for testing mediation 
 				effect in cox regression based on 
 				Vittinghoff, Sen, and McCulloch's (2009) method 
+powerPoisson			Power calculation for simple Poisson regression
 power.SLR			Calculate power for testing slope
 				for simple linear regression
 power.SLR.rho			Calculate power for testing slope
 				for simple linear regression based on R2
+sizePoisson			Sample size calculation for simple Poisson regression
 SSizeLogisticBin		sample size calculation for logistic regression 
 				with binary predictor
 SSizeLogisticCon		sample size calculation for logistic regression 

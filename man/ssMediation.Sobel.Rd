@@ -27,11 +27,11 @@ power of the test.
 }
   \item{theta.1a}{
 regression coefficient for the predictor in the linear regression linking
-the predictor \eqn{x} to the mediator \eqn{m} (\eqn{m_i=\theta_0+\theta_1 x_i + e_i, e_i\sim N(0, \sigma^2_e)}).
+the predictor \eqn{x} to the mediator \eqn{m} (\eqn{m_i=\theta_0+\theta_{1a} x_i + e_i, e_i\sim N(0, \sigma^2_e)}).
 }
   \item{lambda.a}{
 regression coefficient for the mediator in the linear regression linking
-the predictor \eqn{x} and the mediator \eqn{m} to the outcome \eqn{y} (\eqn{y_i=\gamma+\lambda m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})}).
+the predictor \eqn{x} and the mediator \eqn{m} to the outcome \eqn{y} (\eqn{y_i=\gamma+\lambda_a m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})}).
 }
   \item{sigma.x}{
 standard deviation of the predictor.
@@ -45,7 +45,7 @@ square of the correlation between the predictor and the mediator.
   \item{sigma.epsilon}{
 standard deviation of the random error term 
 in the linear regression linking
-the predictor \eqn{x} and the mediator \eqn{m} to the outcome \eqn{y} (\eqn{y_i=\gamma+\lambda m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})}).
+the predictor \eqn{x} and the mediator \eqn{m} to the outcome \eqn{y} (\eqn{y_i=\gamma+\lambda_a m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})}).
 }
   \item{n.lower}{
 lower bound of the sample size.
@@ -64,36 +64,39 @@ logical. \code{TRUE} means printing power; \code{FALSE} means not printing power
 The sample size is for testing the null hypothesis \eqn{\theta_1\lambda=0}
 versus the alternative hypothesis \eqn{\theta_{1a}\lambda_a\neq 0}
 for the linear regressions:
- \deqn{m_i=\theta_0+\theta_1 x_i + e_i, e_i\sim N(0, \sigma^2_e)}{%
-             m_i=\theta_0+\theta_1 x_i + e_i, e_i\sim N(0, \sigma^2_e)}
- \deqn{y_i=\gamma+\lambda m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})}{%
-y_i=\gamma+\lambda m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})
+ \deqn{m_i=\theta_0+\theta_{1a} x_i + e_i, e_i\sim N(0, \sigma^2_e)}{%
+             m_i=\theta_0+\theta_{1a} x_i + e_i, e_i\sim N(0, \sigma^2_e)}
+ \deqn{y_i=\gamma+\lambda_a m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})}{%
+y_i=\gamma+\lambda_a m_i+ \lambda_2 x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{\epsilon})
   }
 
 Test statistic is based on Sobel's (1982) test:
-\deqn{Z=\frac{\hat{\theta}_1\hat{\lambda}}{\hat{\sigma}_{\theta_1\lambda}}
+\deqn{Z=\frac{\hat{\theta}_{1a}\hat{\lambda_a}}{\hat{\sigma}_{\theta_{1a}\lambda_a}}
 }{%
-Z=\frac{\hat{\theta}_1\hat{\lambda}}{\hat{\sigma}_{\theta_1\lambda}}
+Z=\frac{\hat{\theta}_{1a}\hat{\lambda_a}}{\hat{\sigma}_{\theta_{1a}\lambda_a}}
 }
-where \eqn{\hat{\sigma}_{\theta_1\lambda}} is the estimated standard deviation
-of the estimate \eqn{\hat{\theta}_1\hat{\lambda}} using multivariate
+where \eqn{\hat{\sigma}_{\theta_{1a}\lambda_a}} is the estimated standard deviation
+of the estimate \eqn{\hat{\theta}_{1a}\hat{\lambda_a}} using multivariate
 delta method: 
-\deqn{\sigma_{\theta_1\lambda}=\sqrt{\theta_1^2\sigma_{\lambda}^2+\lambda^2\sigma_{\theta_1}^2}}{%
-\sigma_{\theta_1\lambda}=\sqrt{\theta_1^2\sigma_{\lambda}^2+\lambda^2\sigma_{\theta_1}^2}
+\deqn{\sigma_{\theta_{1a}\lambda_a}=\sqrt{\theta_{1a}^2\sigma_{\lambda_a}^2+\lambda_a^2\sigma_{\theta_{1a}}^2}}{%
+\sigma_{\theta_{1a}\lambda_a}=\sqrt{\theta_{1a}^2\sigma_{\lambda_a}^2+\lambda_a^2\sigma_{\theta_{1a}}^2}
 }
 and
- \eqn{\sigma_{\theta_1}^2=\sigma_e^2/(n\sigma_x^2)} is the variance
-of the estimate \eqn{\hat{\theta}_1}, and
-\eqn{\sigma_{\lambda}=\sqrt{\sigma_{\epsilon}^2/(n\sigma_m^2(1-\rho_{mx}^2))}}
-is the variance 
-of the estimate \eqn{\hat{\lambda}}, \eqn{\sigma_m^2} is the variance of the
+ \eqn{\sigma_{\theta_{1a}}^2=\sigma_e^2/(n\sigma_x^2)} is the 
+variance
+of the estimate \eqn{\hat{\theta}_{1a}}, and
+\eqn{\sigma_{\lambda_a}^2=\sigma_{\epsilon}^2/(n\sigma_m^2(1-\rho_{mx}^2))}
+is the variance
+of the estimate \eqn{\hat{\lambda_a}}, \eqn{\sigma_m^2} is the variance of the
 mediator \eqn{m_i}.
 
-From the linear regression \eqn{m_i=\theta_0+\theta_1 x_i+e_i}, we have the
+From the linear regression \eqn{m_i=\theta_0+\theta_{1a} x_i+e_i}, we have the
 relationship \eqn{\sigma_e^2=\sigma_m^2(1-\rho^2_{mx})}. Hence, we can simply
-the variance \eqn{\sigma_{\theta_1, \lambda}} to 
-\deqn{\sigma_{\theta_1\lambda}=\sqrt{\theta_1^2\frac{\sigma_{\epsilon}^2}{n\sigma_m^2(1-\rho_{mx}^2)}+\lambda^2\frac{\sigma_{m}^2(1-\rho_{mx}^2)}{n\sigma_x^2}}}{%
-\sigma_{\theta_1\lambda}=\sqrt{\theta_1^2\frac{\sigma_{\epsilon}^2}{n\sigma_m^2(1-\rho_{mx}^2)}+\lambda^2\frac{\sigma_{m}^2(1-\rho_{mx}^2)}{n\sigma_x^2}}}
+the variance \eqn{\sigma_{\theta_{1a}, \lambda_a}} to 
+\deqn{\sigma_{\theta_{1a}\lambda_a}=\sqrt{\theta_{1a}^2\frac{\sigma_{\epsilon}^2}{n\sigma_m^2(1-\rho_{mx}^2)}+\lambda_a^2\frac{\sigma_{m}^2(1-\rho_{mx}^2)}{n\sigma_x^2}}}{%
+\sigma_{\theta_{1a}\lambda_a}=\sqrt{\theta_{1a}^2\frac{\sigma_{\epsilon}^2}{n\sigma_m^2(1-\rho_{mx}^2)}+\lambda_a^2\frac{\sigma_{m}^2(1-\rho_{mx}^2)}{n\sigma_x^2}}}
+
+
 }
 \value{
   \item{n }{sample size.}

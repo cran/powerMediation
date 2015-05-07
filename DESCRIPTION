@@ -1,6 +1,6 @@
 Package: powerMediation
-Version: 0.2.3
-Date: 2015-02-23
+Version: 0.2.4
+Date: 2015-05-07
 Title: Power/Sample Size Calculation for Mediation Analysis
 Author: Weiliang Qiu <stwxq@channing.harvard.edu>
 Maintainer: Weiliang Qiu <stwxq@channing.harvard.edu>
@@ -11,9 +11,10 @@ Description: Functions to
         (2) the slope in a simple linear regression; 
         (3) odds ratio in a simple logistic regression;
         (4) mean change for longitudinal study with 2 time points;
-        and (5) interaction effect in 2-way ANOVA.
+        (5) interaction effect in 2-way ANOVA; and
+        (6) the slope in a simple Poisson regression.
 License: GPL (>= 2)
 Repository: CRAN
-Packaged: 2015-02-23 17:18:45 UTC; stwxq
-Date/Publication: 2015-02-23 18:53:36
+Packaged: 2015-05-07 21:52:39 UTC; stwxq
+Date/Publication: 2015-05-08 11:45:24
 NeedsCompilation: no
