@@ -13,7 +13,6 @@ ssMediation.Sobel(power,
                   lambda.a, 
                   sigma.x, 
                   sigma.m,
-                  rho2.mx, 
                   sigma.epsilon, 
                   n.lower = 1, 
                   n.upper = 1e+30, 
@@ -38,9 +37,6 @@ standard deviation of the predictor.
 }
   \item{sigma.m}{
 standard deviation of the mediator.
-}
-  \item{rho2.mx}{
-square of the correlation between the predictor and the mediator.
 }
   \item{sigma.epsilon}{
 standard deviation of the random error term 
@@ -120,7 +116,7 @@ The test is a two-sided test. Code for one-sided tests will be added later.
 }
 \examples{
  ssMediation.Sobel(power=0.8, theta.1a=0.1701, lambda.a=0.1998, 
-   sigma.x=0.57, sigma.m=0.61, rho2.mx=0.3, sigma.epsilon=0.2, 
+   sigma.x=0.57, sigma.m=0.61, sigma.epsilon=0.2, 
    alpha = 0.05, verbose = TRUE)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the

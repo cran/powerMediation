@@ -24,10 +24,11 @@ power for testing if \eqn{\lambda=0} for the simple linear regression
 \eqn{y_i=\gamma+\lambda x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma_{e}^2).}
 }
   \item{sigma.x}{
-standard deviation of the predictor.
+standard deviation of the predictor \eqn{sd(x)}.
 }
   \item{sigma.y}{
-standard deviation of the outcome.
+marginal standard deviation of the outcome \eqn{sd(y)}.
+(not the marginal standard deviation \eqn{sd(y|x)})
 }
   \item{alpha}{
 type I error rate.

@@ -65,8 +65,9 @@ testMediation.MacKinnon <- function(n, theta.1.hat, lambda.hat,
 #
 # H0: theta1*lambda = 0 vs Ha: theta1*lambda=theta.1a*lambda.a neq 0
 powerMediation.MacKinnon <- function(n, theta.1a, lambda.a, sigma.x, 
-  sigma.m, rho2.mx, sigma.e, sigma.epsilon, alpha=0.05, verbose=TRUE)
+  sigma.m, sigma.e, sigma.epsilon, alpha=0.05, verbose=TRUE)
 {
+    rho2.mx = (theta.1a*sigma.x/sigma.m)^2
     if(rho2.mx >= 1 || rho2.mx < 0)
     {
         stop("rho2.mx should be in the range [0, 1)")
@@ -107,8 +108,9 @@ powerMediation.MacKinnon <- function(n, theta.1a, lambda.a, sigma.x,
 # yi = gamma + lambda * mi + epsiloni, epsiloni~N(0, sigma.epsilon^2)
 # H0: theta1*lambda = 0 vs Ha: theta1*lambda=theta.1a*lambda.a neq 0
 powerMediation.Sobel <- function(n, theta.1a, lambda.a, sigma.x, 
-  sigma.m, rho2.mx, sigma.epsilon, alpha=0.05, verbose=TRUE)
+  sigma.m, sigma.epsilon, alpha=0.05, verbose=TRUE)
 {
+    rho2.mx = (theta.1a*sigma.x/sigma.m)^2
     if(rho2.mx >= 1 || rho2.mx < 0)
     {
         stop("rho2.mx should be in the range [0, 1)")
@@ -211,12 +213,12 @@ qprod <- function(p,  xmux, xmuy, rho, z.lower=-1.0e+30, z.upper=1.0e+30,
 
 
 tmpSS.mediation.Sobel<-function(n, power, theta.1a, lambda.a, 
-   sigma.x, sigma.m, rho2.mx, sigma.epsilon,
+   sigma.x, sigma.m, sigma.epsilon,
    alpha=0.05, verbose=FALSE)
 {
   tmppower<-powerMediation.Sobel(n=n, theta.1a=theta.1a, 
     lambda.a=lambda.a, sigma.x=sigma.x, sigma.m=sigma.m,
-    rho2.mx=rho2.mx, sigma.epsilon=sigma.epsilon,
+    sigma.epsilon=sigma.epsilon,
     alpha=alpha, verbose=verbose)
   res<- tmppower$power-power
   return(res)
@@ -224,10 +226,11 @@ tmpSS.mediation.Sobel<-function(n, power, theta.1a, lambda.a,
 
 #####################################################
 ssMediation.Sobel <- function(power, theta.1a, lambda.a, 
-  sigma.x, sigma.m, rho2.mx, sigma.epsilon, 
+  sigma.x, sigma.m, sigma.epsilon, 
   n.lower=1, n.upper=1.0e+30, 
   alpha = 0.05, verbose=TRUE)
 {
+  rho2.mx = (theta.1a*sigma.x/sigma.m)^2
   if(n.lower< 1)
   {
     stop("n.lower must be >= 1")
@@ -249,7 +252,7 @@ ssMediation.Sobel <- function(power, theta.1a, lambda.a,
   res.uniroot<-uniroot(f=tmpSS.mediation.Sobel, 
       interval=c(n.lower, n.upper),
       power=power, theta.1a=theta.1a, lambda.a=lambda.a, 
-      sigma.x=sigma.x, sigma.m=sigma.m, rho2.mx=rho2.mx,
+      sigma.x=sigma.x, sigma.m=sigma.m, 
       sigma.epsilon=sigma.epsilon,
       alpha=alpha, verbose=FALSE)
 
@@ -262,12 +265,12 @@ ssMediation.Sobel <- function(power, theta.1a, lambda.a,
 }
 
 tmpSS.mediation.MacKinnon<-function(n, power, theta.1a, lambda.a, 
-   sigma.x, sigma.m, rho2.mx, sigma.e, sigma.epsilon,
+   sigma.x, sigma.m, sigma.e, sigma.epsilon,
    alpha=0.05, verbose=FALSE)
 {
   tmppower<-powerMediation.MacKinnon(n=n, theta.1a=theta.1a, 
     lambda.a=lambda.a, sigma.x=sigma.x, sigma.m=sigma.m,
-    rho2.mx=rho2.mx, sigma.e=sigma.e, sigma.epsilon=sigma.epsilon,
+    sigma.e=sigma.e, sigma.epsilon=sigma.epsilon,
     alpha=alpha, verbose=verbose)
   res<- tmppower$power-power
   return(res)
@@ -275,9 +278,10 @@ tmpSS.mediation.MacKinnon<-function(n, power, theta.1a, lambda.a,
 
 #####################################################
 ssMediation.MacKinnon <- function(power, theta.1a, lambda.a, 
-  sigma.x, sigma.m, rho2.mx, sigma.e, sigma.epsilon, n.lower=1, n.upper=1e+30, 
+  sigma.x, sigma.m, sigma.e, sigma.epsilon, n.lower=1, n.upper=1e+30, 
   alpha = 0.05, verbose=TRUE)
 {
+  rho2.mx = (theta.1a*sigma.x/sigma.m)^2
   if(n.lower< 1)
   {
     stop("n.lower must be >= 1")
@@ -298,7 +302,7 @@ ssMediation.MacKinnon <- function(power, theta.1a, lambda.a,
   res.uniroot<-uniroot(f=tmpSS.mediation.MacKinnon, 
       interval=c(n.lower, n.upper),
       power=power, theta.1a=theta.1a, lambda.a=lambda.a, 
-      sigma.x=sigma.x, sigma.m=sigma.m, rho2.mx=rho2.mx,
+      sigma.x=sigma.x, sigma.m=sigma.m, 
       sigma.e=sigma.e, sigma.epsilon=sigma.epsilon, 
       alpha=alpha, verbose=FALSE)
 

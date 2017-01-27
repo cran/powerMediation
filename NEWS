@@ -1,3 +1,40 @@
+v0.2.6 (powerMediation) Jan. 25, 2017
+  (1) Dr. Chih Ping Chou <cchou@usc.edu> pointed out that "the rho2.mx parameter is totally determined by theta1.a, sigma.x and sigma.m" in Sobel's method.
+So in version 0.2.6, 'rho2.mx' is dropped from the input list.
+
+v0.2.5 (powerMediation) June 1, 2015
+  (1) figured out the answer for question proposed by Dr. George D. Papandonatos in version 0.0.8:
+'sigma.m is not a free parameter'.
+    Acutually 'sigma.m' is a free parameter. Note that the input 'sigma.epsilon' is not the same
+as 'sigma.e'.
+
+ Thanks Dr. Ming Ji (mji@health.usf.edu) for letting me know that I did not answer Dr. Papandonatos's question yet.
+
+  (2) Dr. George D. Papandonatos asked another question:
+----------
+Dear Weiliang,
+
+one other question: 
+
+in the documentation for minEffect.SLR you require sigma.y as the input,  but you fail to define it. 
+Is it the conditional variance of y given x? If so, why not call it sigma.e so as to avoid confusion?
+Same for other functions related to SLR.
+
+Thanks, 
+----------
+
+Answer: 
+-----------
+Dear George,
+sigma.y is the marginal standard deviation of y, sd(y), not the conditional sd sd(y|x). Please find the attached reference paper Dupont and Plummer 1998. 
+
+I will revise the definition of sigma.y in the next release of powerMediation. Thanks for pointing out this ambiguity! 
+
+Best regards,
+
+Weiliang
+-----------
+
 v0.2.4 (powerMediation) May. 7, 2015
   (1) add functions 'sizePoission' and 'powerPoisson'
       for simple Poisson regression
