@@ -23,10 +23,10 @@ absolute difference of the mean changes between the two groups: \eqn{\delta=|\mu
 \eqn{\mu_2} is the mean change over time \eqn{t} in group 2. 
 }
   \item{sigma1}{
-the variance of baseline values within a treatment group
+the standard deviation of baseline values within a treatment group
 }
   \item{sigma2}{
-the variance of follow-up values within a treatment group
+the standard deviation of follow-up values within a treatment group
 }
   \item{rho}{
 correlation coefficient between baseline and follow-up values within a treatment group.

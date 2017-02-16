@@ -1,3 +1,8 @@
+v0.2.7 (powerMediation) Feb. 15, 2017
+  (1) Dr. Kimberly Henry <Kim.Henry@colostate.edu> told that typo in the
+documentaion for the 'powerLongFull', 'ssLongFull' function:
+  sigma1 and sigma2 are standard deviations, not variances
+
 v0.2.6 (powerMediation) Jan. 25, 2017
   (1) Dr. Chih Ping Chou <cchou@usc.edu> pointed out that "the rho2.mx parameter is totally determined by theta1.a, sigma.x and sigma.m" in Sobel's method.
 So in version 0.2.6, 'rho2.mx' is dropped from the input list.

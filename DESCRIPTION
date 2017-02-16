@@ -1,6 +1,6 @@
 Package: powerMediation
-Version: 0.2.6
-Date: 2017-01-25
+Version: 0.2.7
+Date: 2017-02-15
 Title: Power/Sample Size Calculation for Mediation Analysis
 Author: Weiliang Qiu <stwxq@channing.harvard.edu>
 Maintainer: Weiliang Qiu <stwxq@channing.harvard.edu>
@@ -15,6 +15,6 @@ Description: Functions to
         (6) the slope in a simple Poisson regression.
 License: GPL (>= 2)
 Repository: CRAN
-Packaged: 2017-01-25 22:26:18 UTC; stwxq
-Date/Publication: 2017-01-27 10:18:35
+Packaged: 2017-02-15 21:39:39 UTC; stwxq
+Date/Publication: 2017-02-16 07:13:36
 NeedsCompilation: no

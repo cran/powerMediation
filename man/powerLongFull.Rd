@@ -23,10 +23,10 @@ absolute difference of the mean changes between the two groups: \eqn{\delta=|\mu
 \eqn{\mu_2} is the mean change over time \eqn{t} in group 2. 
 }
   \item{sigma1}{
-the variance of baseline values within a treatment group
+the standard deviation of baseline values within a treatment group
 }
   \item{sigma2}{
-the variance of follow-up values within a treatment group
+the standard deviation of follow-up values within a treatment group
 }
   \item{n}{
 sample size per group
@@ -77,9 +77,9 @@ Weiliang Qiu \email{stwxq@channing.harvard.edu}
 \code{\link{powerLong}}.
 }
 \examples{
-    # Example 8.34 on page 336 of Rosner (2006)
-    # power=0.75
-    powerLongFull(delta=5, sigma1=15, sigma2=15, n=75, rho=0.7, alpha=0.05)
+    # Example 8.33 on page 336 of Rosner (2006)
+    # power=0.80
+    powerLongFull(delta=5, sigma1=15, sigma2=15, n=85, rho=0.7, alpha=0.05)
 }
 % Add one or more standard keywords, see file 'KEYWORDS' in the
 % R documentation directory.

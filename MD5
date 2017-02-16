@@ -1,7 +1,7 @@
-000e7e7c76e900996dd7d878367bcdd4 *DESCRIPTION
+f28ec375515deba7751ce0882a622d35 *DESCRIPTION
 444b7e92ecd2882f16d1954d1496480b *INDEX
 ed9c1862e0bd4150fcc2ffaf62fa9c19 *NAMESPACE
-a439e82f682d29011427fe6ae8c0372a *NEWS
+9c4a8f198ff7ff5f537520b7af1b4f09 *NEWS
 ad12a2364e98d9ca9a3db74d5ad932f8 *R/functions_poisson.R
 dbf23e44df99f0fb423068885fd7b84f *R/powerLogisticsReg.R
 2db397e842a562cd6010d0e8f6338a09 *R/powerLongitudinal.R
@@ -25,7 +25,7 @@ f5fec10b19bcfb309fb87e7f0638f092 *man/powerLogisticBin.Rd
 5c08bc189e6fcd4f234f63ba88c77d4a *man/powerLogisticCon.Rd
 5596427838e9f6090f7d7857177b9f8b *man/powerLong.Rd
 60c45526ec6575938eb502c7b7b6a89c *man/powerLong.multiTime.Rd
-98f70247ec02c4f68c8c878b23fff333 *man/powerLongFull.Rd
+35530470747830557fdd49c31bb023ae *man/powerLongFull.Rd
 8fe57f55cd58f6172a79861410f548f3 *man/powerMediation.Sobel.Rd
 f319aefcfd9367cc88f671232743e922 *man/powerMediation.VSMc.Rd
 53f369687440d509abce2d920f1de5ce *man/powerMediation.VSMc.cox.Rd
@@ -37,7 +37,7 @@ f319aefcfd9367cc88f671232743e922 *man/powerMediation.VSMc.Rd
 f7c3b68efe858d15f90b7289fed34d0a *man/ss.SLR.rho.Rd
 8a258df757363891ec8588c02a5ed105 *man/ssLong.Rd
 3ed9fed4d03ba73096f0827a204f0c7a *man/ssLong.multiTime.Rd
-3d273afd22df263784c9d0301b570ccf *man/ssLongFull.Rd
+5d99581b908e69991cc6aaa53c111d3e *man/ssLongFull.Rd
 ec9d3a0f972e6b467b7a3d29f1ed6a42 *man/ssMediation.Sobel.Rd
 efc023c61a3c3acb36915af60673bdd7 *man/ssMediation.VSMc.Rd
 a4b55c754def823d969d75c449454cfc *man/ssMediation.VSMc.cox.Rd
