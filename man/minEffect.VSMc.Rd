@@ -82,7 +82,9 @@ correlation of the mediator with the confounders as well as the predictor.
 Weiliang Qiu \email{stwxq@channing.harvard.edu}
 }
 \note{
-The test is a two-sided test. Code for one-sided tests will be added later.
+The test is a two-sided test. For one-sided tests, please double the 
+significance level. For example, you can set \code{alpha=0.10}
+to obtain one-sided test at 5\% significance level.
 }
 
 \seealso{

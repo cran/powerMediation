@@ -1,3 +1,10 @@
+v0.2.8 (powerMediation) Sept. 8, 2017
+  (1) Through discussion with Dr. Florence Gillaizeau <florence.gillaizeau@mxns.com>, we found
+the power calculation in sizePoisson() is for two-sided test.
+  (2) clarify notations in online manual
+  (3) revise note section to illustrate how to obtain power for
+one-sided tests
+
 v0.2.7 (powerMediation) Feb. 15, 2017
   (1) Dr. Kimberly Henry <Kim.Henry@colostate.edu> told that typo in the
 documentaion for the 'powerLongFull', 'ssLongFull' function:

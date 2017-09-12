@@ -21,14 +21,15 @@ sample size.
 }
   \item{power}{
 power for testing if \eqn{\lambda=0} for the simple linear regression 
-\eqn{y_i=\gamma+\lambda x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma_{e}^2).}
+\eqn{y_i=\gamma+\lambda x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma_{e}^2).}{y_i=gamma+lambda x_i + epsilon_i, epsilon_i ~ N(0, sigma_{e}^2).}
+
 }
   \item{sigma.x}{
-standard deviation of the predictor \eqn{sd(x)}.
+standard deviation of the predictor \eqn{sd(x)=\sigma_x}{sd(x)=sigma_x}.
 }
   \item{sigma.y}{
-marginal standard deviation of the outcome \eqn{sd(y)}.
-(not the marginal standard deviation \eqn{sd(y|x)})
+marginal standard deviation of the outcome \eqn{sd(y)=\sigma_y}{sd(y)=sigma_y}.
+(not the conditional standard deviation \eqn{sd(y|x)}{sd(y|x)})
 }
   \item{alpha}{
 type I error rate.
@@ -39,11 +40,11 @@ logical. \code{TRUE} means printing minimum absolute detectable effect; \code{FA
 
 }
 \details{
-The test is for testing the null hypothesis \eqn{\lambda=0}
-versus the alternative hypothesis \eqn{\lambda\neq 0}
+The test is for testing the null hypothesis \eqn{\lambda=0}{lambda=0}
+versus the alternative hypothesis \eqn{\lambda\neq 0}{lambda neq 0}
 for the simple linear regressions:
  \deqn{y_i=\gamma+\lambda x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{e})}{%
-y_i=\gamma+\lambda x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{e})
+y_i=gamma+lambda x_i + epsilon_i, epsilon_i ~ N(0, sigma^2_{e})
  }
 }
 \value{
@@ -59,7 +60,9 @@ y_i=\gamma+\lambda x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{e})
 Weiliang Qiu \email{stwxq@channing.harvard.edu}
 }
 \note{
-The test is a two-sided test. Code for one-sided tests will be added later.
+The test is a two-sided test. For one-sided tests, please double the 
+significance level. For example, you can set \code{alpha=0.10}
+to obtain one-sided test at 5\% significance level.
 }
 
 \seealso{
@@ -70,7 +73,7 @@ The test is a two-sided test. Code for one-sided tests will be added later.
 }
 
 \examples{
-  minEffect.SLR(n=100, power=0.8, sigma.x=0.2, sigma.y=0.5, 
+  minEffect.SLR(n = 100, power = 0.8, sigma.x = 0.2, sigma.y = 0.5, 
     alpha = 0.05, verbose = TRUE)
 }
 \keyword{ test }

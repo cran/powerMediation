@@ -68,7 +68,9 @@ y_i=\gamma+\lambda x_i + \epsilon_i, \epsilon_i\sim N(0, \sigma^2_{e})
 Weiliang Qiu \email{stwxq@channing.harvard.edu}
 }
 \note{
-The test is a two-sided test. Code for one-sided tests will be added later.
+The test is a two-sided test. For one-sided tests, please double the 
+significance level. For example, you can set \code{alpha=0.10}
+to obtain one-sided test at 5\% significance level.
 }
 
 \seealso{

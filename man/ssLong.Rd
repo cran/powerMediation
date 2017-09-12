@@ -63,9 +63,12 @@ required sample size per group
 \author{
 Weiliang Qiu \email{stwxq@channing.harvard.edu}
 }
-%\note{
-%%  ~~further notes~~
-%}
+\note{
+The test is a two-sided test. For one-sided tests, please double the 
+significance level. For example, you can set \code{alpha=0.10}
+to obtain one-sided test at 5\% significance level.
+
+}
 
 \seealso{
 \code{\link{ssLongFull}}, \code{\link{powerLong}}, 
