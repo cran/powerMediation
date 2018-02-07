@@ -1,3 +1,6 @@
+v0.2.9 (powerMediation) Feb. 7, 2018
+#  (1) refine the online manual for 'sizePoisson' and 'powerPoisson': the sample size is the total sample size
+#
 v0.2.8 (powerMediation) Sept. 8, 2017
   (1) Through discussion with Dr. Florence Gillaizeau <florence.gillaizeau@mxns.com>, we found
 the power calculation in sizePoisson() is for two-sided test.

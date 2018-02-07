@@ -100,7 +100,7 @@ exp[-(theta_1 mu_{x_1} + theta_1^2sigma^2_{x_1}/2)]
 }
 }
 \value{
-sample size
+total sample size
 }
 \references{
     Signorini D.F. (1991). 

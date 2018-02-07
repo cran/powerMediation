@@ -42,7 +42,7 @@ a measure of over-dispersion
 type I error rate
 }
   \item{N}{
-sample size
+toal sample size
 }
 }
 \details{

@@ -1,7 +1,6 @@
-ef0b83569bb4d02fe5872e1bcacaebbf *DESCRIPTION
-444b7e92ecd2882f16d1954d1496480b *INDEX
+283c71eed8de43b911e79686b61fbb5f *DESCRIPTION
 ed9c1862e0bd4150fcc2ffaf62fa9c19 *NAMESPACE
-496df43a1bfc72445a1f4e3b6534fd82 *NEWS
+d67d1744e6a7f6d2c80e26983d0ab028 *NEWS
 ad12a2364e98d9ca9a3db74d5ad932f8 *R/functions_poisson.R
 dbf23e44df99f0fb423068885fd7b84f *R/powerLogisticsReg.R
 2db397e842a562cd6010d0e8f6338a09 *R/powerLongitudinal.R
@@ -31,8 +30,8 @@ b0b167121242d3ab5863e91b67ec8e6c *man/powerMediation.VSMc.Rd
 58bc1e403fac727cc254a383a040068b *man/powerMediation.VSMc.cox.Rd
 23a7bbe43e2a274a86ee3841b52c669a *man/powerMediation.VSMc.logistic.Rd
 e3bb364ce7a5259bad37e5162022ac1c *man/powerMediation.VSMc.poisson.Rd
-b264cd938b031b9bc0cd028b6ba7e1bc *man/powerPoisson.Rd
-45d2bab586e416e3d7b0c869c64ada70 *man/sizePoisson.Rd
+1e67bcd4cbc1c4dbdaaadcc560410678 *man/powerPoisson.Rd
+bc5cc7531fe83541bb7398d7f17a0f57 *man/sizePoisson.Rd
 51b28e877fd95621d786292a8afef4fb *man/ss.SLR.Rd
 88ac7890712ce665a213aba9fab9e03a *man/ss.SLR.rho.Rd
 9e77113757fa76153560015f4fdcacca *man/ssLong.Rd
