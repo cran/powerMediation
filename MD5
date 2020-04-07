@@ -1,7 +1,8 @@
-283c71eed8de43b911e79686b61fbb5f *DESCRIPTION
-ed9c1862e0bd4150fcc2ffaf62fa9c19 *NAMESPACE
-d67d1744e6a7f6d2c80e26983d0ab028 *NEWS
+d74cf7dd3478855ef77701087f8aae94 *DESCRIPTION
+70cea3d203ccc65287965389bdec3390 *NAMESPACE
+169f36710be1563ba6235c6ca11832ed *NEWS
 ad12a2364e98d9ca9a3db74d5ad932f8 *R/functions_poisson.R
+221fafbeca4568c02f79e7d992f6e528 *R/powerInteract2by2.R
 dbf23e44df99f0fb423068885fd7b84f *R/powerLogisticsReg.R
 2db397e842a562cd6010d0e8f6338a09 *R/powerLongitudinal.R
 cea63fa7b79ae363bc7a437f90d42290 *R/powerMediation.R
@@ -9,7 +10,6 @@ b442b8575dbd49645fd26d211f644665 *R/power_VSMc_cox.R
 b16c1f2dc537c7eb03a21b2c9451b9ae *R/power_VSMc_linear.R
 064fdea2d89cd59c2da840611d0c08ad *R/power_VSMc_logistic.R
 87bf7cdb9a95d33a09edc24501bddd7a *R/power_VSMc_poisson.R
-889721fad82f1b3595041d2447740891 *R/power_interaction.R
 101d4a4c77f26935f08f3d9090813bea *man/SSizeLogisticBin.Rd
 83e6f6c2a465bee3e5fd6a070da1772c *man/SSizeLogisticCon.Rd
 8d362451096de215a1e6046349cd951d *man/minEffect.SLR.Rd
@@ -19,7 +19,7 @@ fbbed486931076148f2efbc8b9654f7a *man/minEffect.VSMc.logistic.Rd
 a0f0bcf684e00f932b8be149b028c064 *man/minEffect.VSMc.poisson.Rd
 0b96615d7311077d453650081e2fe378 *man/power.SLR.Rd
 d208c5a76b16612cc3d6dfa1e2aa2afd *man/power.SLR.rho.Rd
-2d7b1484a88a4da673b07e044c953712 *man/powerInteract.Rd
+41c9347036f5a0d88df9e3afda2db9ab *man/powerInteract2by2.Rd
 9f24ace5d149ad24c9d5e747ad046c6d *man/powerLogisticBin.Rd
 85d7f14916c9671059c9ddc482a6d377 *man/powerLogisticCon.Rd
 de7f93aa98b82c41c2efc233132c3803 *man/powerLong.Rd

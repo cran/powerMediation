@@ -1,3 +1,17 @@
+v0.3.2 Apr. 6, 2020
+#  (1) temporarily remove 'powerANOVA', 'powerANOVA2', 'powerANOVA3' and powerInteract and powerInteract2
+#
+v0.3.1 Jan. 8, 2020
+#  (1) corrected the power calculation formula for regression approach
+#
+v0.3.0 Jan. 1, 2020
+# (1) update maintainer's email
+# (2) replaced 'powerInteract' by 'powerInteract2by2.2'
+# (3) added new 'powerInteract'
+# (3) added functions 'powerANOVA', 'powerANOVA2', 'powerANOVA3', 'powerInteract2',
+#    'powerInteract3', and 'powerInteract2by2' for power calculation
+#    in ANOVA analysis
+#
 v0.2.9 (powerMediation) Feb. 7, 2018
 #  (1) refine the online manual for 'sizePoisson' and 'powerPoisson': the sample size is the total sample size
 #

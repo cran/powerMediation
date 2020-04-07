@@ -7,7 +7,7 @@ export(
   minEffect.VSMc.logistic,
   minEffect.VSMc.poisson,
   minEffect.VSMc.cox,
-  powerInteract,
+  powerInteract2by2,
   powerLogisticBin,
   powerLogisticCon,
   powerLong,
