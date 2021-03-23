@@ -23,7 +23,8 @@ the event rate at the mean of the continuous predictor \eqn{X} in logistic regre
 \eqn{logit(p) = a + b X}.
 }
   \item{OR}{
-expected odds ratio. \eqn{\log(OR)} is the change in log odds for an increase of one unit in \eqn{X}.
+Expected odds ratio. \eqn{\log(OR)} is the change in log odds for the difference between at the mean of \eqn{X} and at one SD above the mean.
+
 }
   \item{alpha}{
 Type I error rate.
@@ -36,8 +37,8 @@ The logistic regression mode is
 }{%
 \log(p/(1-p)) = \beta_0 + \beta_1 X
 }
-where \eqn{p=prob(Y=1)}, \eqn{X} is the continuous predictor, and \eqn{\beta_1} is the 
-log odds ratio.
+where \eqn{p=prob(Y=1)}, \eqn{X} is the continuous predictor, and \eqn{\log(OR)} is the
+the change in log odds for the difference between at the mean of \eqn{X} and at one SD above the mean.
 The sample size formula we used for testing if \eqn{\beta_1=0} or equivalently
 \eqn{OR=1}, is Formula (1) in Hsieh et al. (1998):
 \deqn{
